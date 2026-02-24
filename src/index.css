@@ -83,7 +83,7 @@ input {
   background-color: #5a3e2b;
   color: #ffebb3;
   padding: 4rem 0;
-  height: 53.95vh; /* fixed height for scroll */
+  height: 51.5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
