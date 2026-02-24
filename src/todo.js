@@ -30,6 +30,10 @@ function Form() {
     setDescription("");
   }
 
+  function handledel(id) {
+    setItems((items) => items.filter((item) => item.id !== id));
+  }
+
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -55,6 +59,7 @@ function Form() {
           <>
             <li key={item.id}>{item.task}</li>
             <li>{item.description}</li>
+            <button onClick={() => handledel(item.id)}>X</button>
           </>
         ))}
       </ul>
