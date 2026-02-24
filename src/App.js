@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Todo from "./todo";
 
 export default function App() {
   const [items, setItems] = useState([]);
@@ -22,7 +21,6 @@ export default function App() {
 
   return (
     <div className="apps">
-      <Todo />
       <Logo />
       <Form onAddItem={handleAdd} />
       <PackingList
